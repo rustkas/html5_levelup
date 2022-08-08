@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Progress</title>
+    <meta name="description" content="AwesomeCo Blog" />
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="m-4">
+    <section>
+      <h2 class="text-xl font-semibold my-7 font-serif antialiased">Task Progress</h2>
+      <p>Progress: 
+        <progress id="progressbar" min="0" max="100" value="0"></progress>
+      </p>
+     </section>
+
+<script>
+      const progressBar = document.getElementById("progressbar");
+      
+      setTimeout("incrementProgressbar()", 5000);
+      setTimeout("incrementProgressbar()", 5000);
+
+      function incrementProgressbar(){
+        progressBar.value += 25;
+      }
+    
+    </script>  
+  </body>
+</html>
